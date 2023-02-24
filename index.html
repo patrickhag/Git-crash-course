@@ -1,11 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>BlogsHUB • Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@300&display=swap">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-purple.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif
+  }
+
+  #logo {
+    float: left;
+    height: 50px;
+    width: auto;
+  }
+</style>
+
 <body>
-	<h1>Hello world</h1>
+  <!-- Navbar sit on top -->
+  <header class="w3-top">
+    <div class="w3-bar w3-card-4 w3-white">
+      <div class="w3-bar-item"><a href="#home" class="w3-button w3-wide w3-hover-none">LOGO</a></div>
+      <div class="w3-right w3-hide-small w3-text-theme">
+        <div class="w3-bar-item"><a href="#" class="w3-button w3-wide w3-hover-none" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">ABOUT</a></div>
+        <div class="w3-bar-item"><a href="#" class="w3-button w3-wide w3-hover-none" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">BLOG</a></div>
+        <div class="w3-bar-item"><a href="#" class="w3-button w3-wide w3-hover-none" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">CONTACT</a></div>
+        <div class="w3-bar-item"><a href="#" class="w3-button w3-wide w3-hover-none" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)"> COURSES</a> </div>
+      </div>
+      <!-- Hide right-floated links-->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="openLink()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-theme"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeLink()"
+      class="w3-button w3-large w3-padding-16 w3-hover-red w3-right"><i class="fa fa-close"></i></span></i></a>
+    <a href="javascript:void(0)" onclick="closeLink()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="javascript:void(0)" onclick="closeLink()" class="w3-bar-item w3-button">BLOG</a>
+    <a href="javascript:void(0)" onclick="closeLink()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="javascript:void(0)" onclick="closeLink()" class="w3-bar-item w3-button">COURSES</a>
+  </nav>
+  <br><br><br><br>
+  <!-- Social networks -->
+  <div class="w3-diplay-container">
+    <div class="w3-display-left w3-padding" style="position: fixed;">
+      <a href="#"><i class="fa fa-instagram w3-xxxlarge w3-left"></i></a><br>
+      <a href="#"><i class="fa fa-twitter w3-xxxlarge"></i></a><br>
+      <a href="#"><i class="fa fa-linkedin w3-xxxlarge"></i></a>
+    </div>
+  </div>
+  <!-- Main content -->
+  <main class="w3-container w3-row" style="margin-top: 7%;">
+    <div class="w3-l6" style="width: 55%; font-size: 20px;margin-left: 25%;">
+      <!-- Header of content -->
+      <div class="w3-center w3-wide">
+        <h2><b>5 Reasons why I moved from Angular to React.</b></h2>
+        <p>JANUARY 11, 2023 BY PATRICK HAG - <a href="this:void(0)" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">EDIT THIS POST</a></p>
+      </div>
+      <p>I did a lot of Angular 1.x back in the days until I started to use React. I can say that I used both solutions
+        extensively. But there were and are several reasons why I moved to React. These reasons were not clear from the
+        beginning, but retrospectively I think I can summarize these very well.</p>
+      <p>In the following I want to give you 10 reasons why I moved from Angular to React. I liked Angular in all its
+        facets back in the days, but it was about time to move on. Perhaps the article helps people to understand the
+        benefits of React, but also the benefits of Angular, to make a decision between Angular or React - or even React
+        or Angular 2.</p>
+      <p>The article is not intended to blame Angular. Angular, for myself, was a great single page app experience for a
+        long time. I enjoyed the framework, because it gives you everything you need. I only used Angular 1.x
+        extensively, so I cannot speak for Angular 2, but I think most of the philosophy behind the framework is still
+        the same and adaptable for the article. In the end it is only my experience that I made with both solutions.</p>
+      <p>The article is no comparison between two solutions per se. It is a reflection about why you could consider to
+        use React as your solution. It makes no sense to compare apples and oranges. But it makes sense to reflect why
+        you can use or why you have chosen a specific tool at hand.</p>
+      <p>Nevertheless, let's dive into the 10 reasons why I enjoy to use React now.</p>
+      <br>
+      <hr>
+      <br>
+      <h3 class="w3-center">REACT IS ONLY A VIEW LIBRARY</h3><br>
+      <p>Single page applications (SPA) follow the common sense of component based user interfaces. A component gets an
+        input and returns an instance of the component as output. For instance, the output can be a simple button
+        element. You have to define your components with its input and ouput and internal behaviour only once.
+        Afterwards you can use it everywhere in your DOM hierarchy to create instances of the component. In a best case
+        scenario the defined component is easy to reuse and to compose into other components.</p>
+      <p>React is an ideal fit for a component based user interface. It is only a view library and solves all the
+        described component requirements. It is a library dedicated to solve one problem: It gives you all the tools to
+        build effectively a component based user interface.
+        <br><br>
+        You can see React as one building block for your SPA. Once you need to solve other problems, you need other
+        building blocks. Your application needs routing? Take a look at the routing solutions suited for React. Your
+        application needs scaleable state management? Take a look at different state management solutions. You need to
+        execute asynchronous requests? Take a look at one of the solutions like fetch, axios or superagent.
+        <br><br>
+
+        Nevertheless it is possible to build your application solely with React. It might be no mature application with
+        routing and sophisticated state management, but it can work out for small applications. In The Road to learn
+        React you can build one of these applications to learn plain React.
+        <br><br>
+
+        React itself is only a building block in your application. It offers you a solution to build component based
+        user interfaces. Like every other building block it stays exchangeable. You can use another solution to build
+        component based user interfaces but still can couple them with other building blocks.
+        <br><br>
+
+        In that perspective Angular is different. It isn't a library, but a framework. It offers you more than one
+        building block. It is a more rigid solution. The ReactJs ecosystem, with all its building blocks, can be seen as
+        a framework as well. But compared to AngularJs it offers exchangeable building blocks. In Angular you get
+        everything out of the box. It is a paradox that on one hand it can be easier to learn it, because it is
+        opinionated about its building blocks. But on the other hand you learn every building block at once which can be
+        overwhelming. The latter applies for React too when you start to learn everything at once.
+      </p>
+      <br>
+      <hr><br>
+      <h2 class="w3-center">REACT IS AN INNOVATIVE PLACE.</h2>
+      <br>
+      <p>
+        React is only the core of the ecosystem and everything around it consists of building blocks. You are flexible
+        to choose your building blocks to solve different problems. But it remains simple to exchange them. The
+        simpleness to exchange them makes it possible for novel approaches to thrive. You can take Redux and MobX for
+        state management as an example. Redux got great momentum in the early days yet MobX has a small community of
+        advocates, because it is possible to exchange both solutions.
+        <br><br>
+        Even the core building block React is exchangeable. Recent libraries like Inferno and Preact compete with React
+        and can be used to replace React. I cannot remember that someone used these libraries in another context. It
+        makes no sense to use these approaches in Angular, because Angular comes with its own solutions.
+        <br><br>
+        The exchangeable building blocks in React make it possible to experiment with novel approaches. It gives these
+        approaches room to get adopted by the community. It makes the React ecosystem such an innovative place.
+      </p>
+      <br>
+      <hr><br>
+      <h2 class="w3-center">JSX - MIX UP HTML AND JAVASCRIPT.</h2>
+      <p>React comes with its own syntax to build components called JSX. In JSX you can mix up HTML and JavaScript.
+        Additionally people often use inline styles in their elements. It is like adding CSS into the mix. It can be
+        confusing in the beginning, but it feels natural eventually. You can use JavaScript to compose and manipulate
+        your DOM, but it is inlined in your HTML. You can use built-in JavaScript functionalities like map and filter to
+        display multiple (filtered) DOM nodes. But you can also use ternaries to make conditional renderings happen. You
+        can use the full power of JavaScript in your HTML.
+        <br>
+        In the range of SPA solutions it was a novel approach to define your components with mixed up HTML and
+        JavaScript. In older server side rendering solutions (e.g. JSP) that approach was already present.
+        <br>
+        In contrast, in Angular you have a clear separation of concerns between logic and view. There are built-in
+        expressions like ng-repeat (Angular 1.x) or ngFor (Angular 2) in your HTML to accomplish the same thing like a
+        native JavaScript map() in JSX.
+      </p>
+      <br>
+      <hr><br>
+      <h2 class="w3-center">REACT HAS A SIMPLE API.</h2>
+      <p>React is only a view library. It solves one problem and it solves it well. Thus it comes only with a handful
+        methods to learn and understand.
+        <br><br>
+        A React component comes with lifecycle methods. In React ES6 class components you can use these methods to hook
+        into the lifecycle of a component. Usually you only need the mandatory render() lifecycle method to render your
+        elements as a new instance of the component. The render block runs one time when your component is initialized
+        and every time when your component updates. That's it. But you can opt-in more lifecycle methods to add advanced
+        component behaviour. For instance, you can use the constructor() to initialize a stateful component and add
+        class methods to manipulate the state. Every time the state changes the render lifecycle method runs again to
+        update your view.
+        <br><br>
+        Overall there are only 9 lifecycle methods to control your component. But in most cases you need only half of
+        them - even in mature React applications.
+        <br><br>
+        After that you only need to know two more React ES6 class component methods: setState() and forceUpdate(). You
+        will barely touch the latter one which updates a component forcefully and programmatically. But setState() is
+        used to update your internal component state that you have initialized in your constructor() lifecycle method.
+        Imagine you have a list of items in your component. As next step you want to be able to add and remove items
+        from the list. You can do so by storing the list in your internal component state this.state and by using
+        setState() to update the list.
+        <br><br>
+        You can read more in depth about the React component API in the official React documentation. If you are not
+        familiar with APIs in general, I can recommend to read this article.
+        <br><br>
+        After that you know all the essential component methods. Still there are more concepts in React, like props and
+        state, the children property or different component declarations. But you can learn all of them step by step.
+        <br><br>
+        In conclusion React itself has no steep learning curve. It is only the view layer with a handful of methods to
+        understand. If you start to learn React as first building block, I would recommend to learn only React and no
+        other building block. The book The Road to learn React follows that learning concept. It covers all the
+        mentioned topics which you would have to learn in order to understand React.
+      </p>
+      <br>
+      <hr><br>
+      <h2 class="w3-center">LIGHTWEIGHT COMPONENTS => BEST PRACTICES.</h2><br>
+      <p>Components in React can be defined in two ways: ES6 class components and functional stateless components. The
+        latter are only functions that get an input and return elements as output. Still they are components. They are
+        components without any boilerplate because you only have to define a regular JavaScript function. I cannot say
+        that Angular made it that easy to define components.</p>
+      <div class="w3-panel w3-light-grey" style="background-color: #1a0006;">
+        <h4>ES6 class components</h4>
+        <div class="w3-code jsHigh w3-leftbar w3-border-green notranslate w3-tooltip">
+
+          function Button({ onClick, children }) {<br>
+          &nbsp;&nbsp;&nbsp; return ( <br>
+          &nbsp;&nbsp;&nbsp; <button onClick={onClick} type="button"><br>
+            &nbsp;&nbsp;&nbsp; {children}<br>
+            &nbsp;&nbsp;&nbsp; </button><br>
+          &nbsp;&nbsp;&nbsp;); <br>
+          }
+        </div>
+      </div>
+      <br>
+      <p>It is a good practice to use functional stateless components whenever you can. That means whenever you don't
+        need access to the component state or lifecycle methods. It embraces a best practices around components where
+        you keep them lightweight and small yet reusable, composable and functional without any side effects. By having
+        such a small boilerplate you are encouraged to follow these best practices.</p>
+      <br>
+      <p>In conclusion I hope these reasons help you to have a better understanding of the React ecosystem. Maybe they
+        help you to make a personal decision if you want to hop on the React train in 2023. Personally it helped me to
+        reflect about my decision to start to learn React. Apart from that it was an upside that my company Small
+        Improvements did this step as well in the mid of last year. But we have plenty of Angular leftovers and are keen
+        to hire people who know both solutions.</p><br>
+      <div class="w3-round w3-border w3-padding"><span>Continue Reading: <a href="#" class="w3-text-theme">Tips to learn
+            React + Redux</a></span></div><br>
+      <div class="w3-round w3-border w3-padding"><span>Continue Reading: <a href="#" class="w3-text-theme">The
+            SoundCloud Client in React + Redux</a></span></div>
+      <hr>
+      <h3 class="w3-wide">KEEP READING OTHER <a href="#" class="w3-text-theme">ARTICLES &#10095;</i></a></h3>
+      <div class="w3-row-padding">
+        <a href="#" class="w3-half w3-padding" style="text-decoration: none;" onmouseover="onCardOver(this)"
+          onmouseleave="offCardOver(this)">
+          <img src="./images/app2.jpg" alt="" width="100%" height="70%">
+          <h4 class="w3-wide">D3 ON ANGULAR: REUSABLE COMPONENTS</h4>
+          <p>These days. In the future you will get to hear more and more about Web Components, which get available in
+            Angular 2.0 as well, to create different reusable components…</p>
+        </a>
+        <a href="#" class="w3-half w3-padding" style="text-decoration: none;" onmouseover="onCardOver(this)"
+          onmouseleave="offCardOver(this)">
+          <img src="./images/app2.jpg" alt="" width="100%" height="70%">
+          <h4 class="w3-wide">D3 ON ANGULAR: REUSABLE COMPONENTS</h4>
+          <p>These days. In the future you will get to hear more and more about Web Components, which get available in
+            Angular 2.0 as well, to create different reusable components</p>
+        </a>
+      </div>
+    </div>
+    <br>
+  <hr>
+  <br><br>
+    <div class="w3-center">
+      <h3>TAKE PART</h3>
+      <p class="w3-wide w3-opacity">NEVER MISS AN ARTICLE ABOUT WEB DEVELOPMENT AND JAVASCRIPT.</p>
+      <br><br>
+      <div class="w3-opacity-min">
+      <h4>✔ Learn Web Development</h4><br>
+      <h4>✔ Learn JavaScript and it's descendants</h4><br>
+      <h4>✔ Access Tutorials, eBooks and Courses</h4><br>
+      <h4>✔ Personal Development as a Software Engineer</h4><br><br>
+      </div>
+      <a href="#" class="w3-button w3-theme w3-round w3-xlarge w3-hover-white" onmouseover="onBtnOver(this)"><span class="w3-text-small">subscribe</span> &#10095;</a>
+      <br><br><br>
+    </div>
+    <script src="lib/w3codecolor.js"></script>
+  </main>
+    <hr>
+      <br><br><br>
+  <!-- Footer section -->
+  <footer>
+      <div class="w3-row" style="margin-left: 70%;">
+          <div class="w3-col l6 m12 s12">
+            <h4><b>PORTFOLIO</b></h4>
+            <br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">Online Courses</a><br><br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">Open Source</a><br><br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">Tutorials</a>
+          </div>
+          <div class="w3-col l6 m12 s12">
+            <h4><b>ABOUT ME</b></h4>
+            <br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">About me</a><br><br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">How to work with me</a><br><br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">What i use</a><br><br>
+            <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">How to support me</a>            
+          </div>          
+      </div>
+      <br><br><br>
+      <hr>
+      <div class="w3-margin w3-padding-32">
+        <div class="w3-display-container">
+       <h6 class="w3-display-left">&copy;Patrick HAG</h6>
+          <span class="w3-display-middle">
+            <a href="#"><i class="fa fa-twitter w3-xlarge"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fa fa-instagram w3-xlarge"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fa fa-linkedin w3-xlarge"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fa fa-github w3-xlarge"></i></a>
+          </span>
+          <div class="w3-display-right">
+          <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">Contact Me</a>&nbsp;&nbsp;
+          <a href="#" style="text-decoration: none;" onmouseover="mouseIn(this)"
+            onmouseleave="mouseOut(this)">Terms & Privacy</a>
+          </div>
+        </div>       
+      </div>
+      </footer>
+  <script>w3CodeColor();</script>
+  <script>
+    function mouseIn(thatIdEl) {
+      thatIdEl.classList.add('w3-text-theme')
+      thatIdEl.classList.add('w3-border-bottom')
+    }
+    function mouseOut(thatIdEl) {
+      if (thatIdEl.classList.contains('w3-text-theme')) {
+        thatIdEl.classList.remove('w3-text-theme')
+      }
+      thatIdEl.classList.remove('w3-border-bottom')
+    }
+    const mySidebar = document.getElementById("mySidebar");
+
+    function openLink() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+    function closeLink() {
+      mySidebar.style.display = "none";
+    }
+    const onCardOver = thatDivEl => {
+      thatDivEl.classList.add('w3-card-4')
+    }
+    const offCardOver = thatDivEl => {
+      thatDivEl.classList.remove('w3-card-4')
+    }
+    const onBtnOver = btnEl => {
+      btnEl.classList.add('w3-border')
+      btnEl.classList.add('w3-border-purple')
+    }
+
+  </script>
+  <script src="index.js"></script>
 </body>
+
 </html>
